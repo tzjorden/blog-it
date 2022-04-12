@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(247, 170, 140);
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.homepage {
+  font-family: cursive;
+  font-size: x-large;
+
+}
+
+
+a.active{
+  color: #000;
+}
+
+a{
+  color: #000;
+}
+
+.quote1{
+  position:absolute;
+  right:8in;
+  bottom: 1in;
+}
+
+input{
+  width: 20%;
+  height: .5in;
+  border: 10px rgb(247, 170, 140) double;
+}
+
+
+.navbar {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: x-large;
+  list-style: none;
+  margin: 0 2px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.signup{
+  width: 100%;
+  padding: 14px 16px;
+  border: 0;
+  background: transparent;
+  color: rgb(0, 0, 0);
+  font-family: monospace, serif;
+  letter-spacing: 0.05em;
+  font-size: 16px;
+}
+
+.button{
+  width: 100%;
+  display: block;
+  padding: 10px;
+  background: transparent;
+  outline: none;
+  border: 0;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.button:hover{
+  background-color: blanchedalmond;
+}
+
+
+.content{
+  box-shadow: black;
+  /* border: solid black; */
+  border: 10px rgb(247, 170, 140) double;
+  width: 8in;
+  position: bottom right;
+}
+
+.card{
+  background-color: white;
+  border: solid black;
+}
