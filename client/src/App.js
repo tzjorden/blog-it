@@ -1,14 +1,14 @@
 import './App.css';
 import React,{useState, useEffect} from 'react';
 import { Routes, Route } from "react-router-dom";
-import Signup from './Signup';
+import Signup from './SignUp';
 import Navbar from './Navbar';
-import Homepage from './Homepage';
+import Homepage from './HomePage';
 import Login from './Login';
 import Favorite from './Favorite';
-import UserPage from './Userpage';
-import Postarticle from './Postarticle';
-import Logout from './Logout';
+import UserPage from './UserPage';
+import Postarticle from './PostArticle';
+import Logout from './LogOut';
 
 
 function App() {
@@ -38,9 +38,9 @@ function App() {
     <div className="App">
       {/* <Navbar/>  */}
        <Routes>
-        <Route path="/logout" element={<Logout user = {user} setUser = {setUser}  />} />
+        {/* <Route path="/logout" element={<Logout user = {user} setUser = {setUser}  />} /> */}
         <Route path="/article" element={<Postarticle />} />
-        <Route path="/" element={<Homepage />} />
+        <Route exact path="/" element={<Homepage />} />
         <Route path="/login" element={<Login onLogin = {setUser} />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/favorites" element={<Favorite />} />

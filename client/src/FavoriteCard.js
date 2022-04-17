@@ -11,11 +11,11 @@ function FavoriteCard({ getFavorited, favoriteId, setGetFavorited }) {
      return getFavorited.filter((e) => e.id !== favoriteId)
     });
   }
-
+  console.log(getFavorited)
 
   return (
-    <div className="favorite_container">
-      <p>{getFavorited.title}</p> 
+    <div className="card">
+      <p className = "title">{getFavorited.title}</p> 
         <p>{getFavorited.content}</p> 
         <button onClick={handleDelete} className="emoji-button-delete">
             🗑

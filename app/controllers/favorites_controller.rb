@@ -2,7 +2,9 @@ class FavoritesController < ApplicationController
     rescue_from ActiveRecord::RecordInvalid, with: :render_invalid
 
     def index 
-        render json: Favorite.all
+        user = @current_user
+        favorites = user.favorited_articles
+        render json: favorites
     end
 
    def create

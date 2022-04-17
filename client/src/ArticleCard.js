@@ -4,7 +4,7 @@ function ArticleCard({article, user}) {
 
     const [favorited, setFavorited] = useState(true);
 
-    function handleFavoriteButtton(e) {
+    function handleFavoriteButton(e) {
         e.preventDefault();
         setFavorited(!favorited);
         
@@ -24,13 +24,27 @@ function ArticleCard({article, user}) {
 
   return (
     <div className = "card">
-        <p>{article.title}</p> 
+        <p className = "title">{article.title}</p> 
         <p>{article.content}</p> 
-        <button onClick={handleFavoriteButtton} className="like_button">
+        {favorited && (
+        <button onClick={handleFavoriteButton} className="like_button">
             Favorite
-        </button> 
+        </button>
+        )}
+        {!favorited && (
+        <button onClick={handleFavoriteButton} className="like_button">
+            Added!
+        </button>
+        )} 
     </div>
   )
 }
 
 export default ArticleCard;
+
+
+
+
+//   <button onClick={handleFavoriteButton} className="like_button">
+//             Favorite
+//         </button> 

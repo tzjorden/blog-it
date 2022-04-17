@@ -6,6 +6,10 @@ function Homepage() {
   return (
     <div className = "homepage" >
         <Navbar/>
+
+        <span className="homepage-text">
+            Publish your article to the world!
+        </span>
         
         <div className = "quote1">
         Share your knowledge.
