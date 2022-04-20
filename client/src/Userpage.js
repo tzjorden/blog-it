@@ -12,8 +12,10 @@ function UserPage({articles, user, setUser}) {
   return (
 
     <div>
-        <h2 className="welcome">Welcome back, {user.username}!</h2>
         <Logout className="navbar">Logout</Logout>
+        <div className="typewriter">
+          <h2>Welcome back,{user.username}!</h2>
+        </div>
         <UserpageNav />
         <Routes>
             <Route path="/article" element={<Postarticle />} />

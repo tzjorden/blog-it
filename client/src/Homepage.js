@@ -7,9 +7,13 @@ function Homepage() {
     <div className = "homepage" >
         <Navbar/>
 
-        <span className="homepage-text">
+        {/* <span className="typing">
             Publish your article to the world!
-        </span>
+        </span> */}
+
+        <div className="typewriter">
+          <h1> Publish your article to the world!</h1>
+        </div>
         
         <div className = "quote1">
         Share your knowledge.

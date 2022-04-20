@@ -17,7 +17,7 @@ function Favorite() {
       <div>
         <h2>Liked Articles</h2>
           {getFavorited.map((favorite) => (
-            <FavoriteCard key={favorite.id} getFavorited={favorite} favoriteId={favorite.id}  setGetFavorited = {setGetFavorited}/>
+            <FavoriteCard key={favorite.id} getFavorited={favorite} favoriteId={favorite.favorite_id}  setGetFavorited = {setGetFavorited}/>
           ))}
       </div>
   )

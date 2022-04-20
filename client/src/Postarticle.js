@@ -29,17 +29,18 @@ import { useNavigate} from 'react-router-dom';
 
   return (
     <div className = "post-article">
-        <h2>Share your Article!</h2>
+        <h2>Share your Article</h2>
         <form onSubmit={handleSubmit}>
             <label>
-                <span>Title</span>
+                <h2 className = "postarticle-label">Title</h2>
                 <input value={title} onChange={(e) => setTitle(e.target.value)}  type = "text"/>
             </label>
-            <label >
-                <span>Content</span>
-                <textarea value={content} onChange={(e) => setContent(e.target.value)} className = "content" rows={30}/>
-            </label>
-            <button className="button" type="submit">Add</button>
+            <h2 className = "postarticle-label">Content</h2>
+            <textarea value={content} onChange={(e) => setContent(e.target.value)} className = "content" rows={30}/>
+            
+              <button className="post-button" type="submit"> 
+                  Publish 
+              </button>
         </form>
     </div>
   )

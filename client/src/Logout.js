@@ -11,14 +11,14 @@ function Logout({user, setUser}) {
         fetch("/logout", { method: "DELETE" }).then((r) => {
           if (r.ok) {
             setUser(null);
-          }navigate("/");
+          }
         });
       }
 
   return (
     <div>
      <nav className="navbar">
-        <NavLink onClick={handleLogoutClick} to="/logout">Logout</NavLink>
+        <NavLink onClick={handleLogoutClick} to="/">Logout</NavLink>
     </nav>
     </div>
   )

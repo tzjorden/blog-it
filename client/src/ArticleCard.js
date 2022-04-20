@@ -23,28 +23,23 @@ function ArticleCard({article, user}) {
     console.log(user)
 
   return (
+    <div className = "container">
     <div className = "card">
         <p className = "title">{article.title}</p> 
         <p>{article.content}</p> 
         {favorited && (
         <button onClick={handleFavoriteButton} className="like_button">
-            Favorite
+            👍
         </button>
         )}
         {!favorited && (
         <button onClick={handleFavoriteButton} className="like_button">
-            Added!
+            ✔️
         </button>
         )} 
+    </div>
     </div>
   )
 }
 
 export default ArticleCard;
-
-
-
-
-//   <button onClick={handleFavoriteButton} className="like_button">
-//             Favorite
-//         </button> 

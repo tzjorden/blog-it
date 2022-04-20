@@ -9,4 +9,11 @@ class User < ApplicationRecord
 
     validates :username, presence: true, uniqueness: true
     # validates :password, presence: true, uniqueness: true
+    def favorite_articles
+        favorites.map do |fave| 
+            article = Article.find(fave.article_id).attributes
+            {favorite_id: fave.id}.merge(article)
+        end
+    end
+
 end
